@@ -40,12 +40,15 @@ createApp({
         if(this.activeIndex < 0){
             this.activeIndex = this.slides.length -1;
         }
-    },     //creo 2 metodi che mi permettano rispettivamente di aumentare e diminuire l'indice associato alle img
+    },
     nextImage (){   
         this.activeIndex += 1;
         if(this.activeIndex >= this.slides.length){
             this.activeIndex = 0;
         }
+    },
+    currentImage (currentIndex){
+        this.activeIndex = currentIndex;
     }
   }
 }).mount('#app')

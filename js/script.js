@@ -50,6 +50,10 @@ createApp({
     currentImage (currentIndex){
         this.activeIndex = currentIndex;
     }
+    
+  },
+  created : {
+    
   }
 }).mount('#app')
 
